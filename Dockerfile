@@ -12,4 +12,4 @@ WORKDIR /dns-api
 COPY --from=builder /go/bin/dns-api .
 ENV DNS_SERVER 4.2.2.4:53
 EXPOSE 3000
-CMD ["./server"]
+CMD ["./dns-api"]
