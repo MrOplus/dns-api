@@ -14,7 +14,9 @@
 ## Response Types 
 - JSON
 - WIRE
-
+## Envronment Variables
+- `DNS_SERVER` - The DNS server to use. Defaults to 4.2.2.4:53`
+- `PREFORK` - Prefork Enabled. Defaults to false
 ## Usage
 ```
 localhost:3000/class/type/base64encodedUrl?type=[dns,http]
