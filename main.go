@@ -4,6 +4,7 @@ import (
 	"encoding/base64"
 	"fmt"
 	"github.com/gofiber/fiber/v2"
+	recover2 "github.com/gofiber/fiber/v2/middleware/recover"
 	"github.com/miekg/dns"
 	"github.com/patrickmn/go-cache"
 	"log"
@@ -19,7 +20,7 @@ func main() {
 		Prefork:      os.Getenv("PREFORK") == "true",
 		ServerHeader: "HttpDNS",
 	})
-
+	app.Use(recover2.New())
 	//new DNS Client Instance (default 2s timeout)
 	dnsClient := new(dns.Client)
 

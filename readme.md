@@ -26,7 +26,7 @@ Example :
 localhost:3000/IN/A/Z29vZ2xlLmNvbS4=?type=dns
 ```
 
-Powered By : 
+## Powered By : 
 - [miekg DNS](github.com/miekg/dns)
 - [Fiber](github.com/gofiber/fiber)
 
